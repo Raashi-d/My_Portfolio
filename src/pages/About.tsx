@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Github, Linkedin, Facebook, Instagram } from 'lucide-react';
 
 const About: React.FC = () => {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
+
   const socialLinks = [
     {
       icon: <Linkedin className="w-6 h-6" />,
@@ -26,13 +32,13 @@ const About: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-20 px-4">
+    <div className={`min-h-screen pt-20 px-4 ${loaded ? 'animate-fadeIn' : ''}`}>
       <div className="container mx-auto max-w-4xl">
         <h1 className="section-title">About Me</h1>
         
-        <div className="grid md:grid-cols-2 gap-8 items-center animate-fadeIn">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
-            <div className="bg-gray-900 dark:bg-gray-100 p-6 rounded-lg animate-slideInLeft">
+            <div className={`bg-gray-900 dark:bg-gray-100 p-6 rounded-lg ${loaded ? 'animate-slideInLeft' : ''}`}>
               <h2 className="section-subtitle">Personal Information</h2>
               <ul className="space-y-3 text-gray-300 dark:text-gray-700">
                 <li><span className="text-yellow-400">Name:</span> Mohamed Raashid</li>
@@ -43,7 +49,7 @@ const About: React.FC = () => {
               </ul>
             </div>
             
-            <div className="bg-gray-900 dark:bg-gray-100 p-6 rounded-lg animate-slideInRight">
+            <div className={`bg-gray-900 dark:bg-gray-100 p-6 rounded-lg ${loaded ? 'animate-slideInRight' : ''}`}>
               <h2 className="section-subtitle">Connect With Me</h2>
               <div className="flex space-x-4">
                 {socialLinks.map((link) => (
@@ -63,7 +69,7 @@ const About: React.FC = () => {
           </div>
           
           <div className="relative">
-            <div className="w-full aspect-square rounded-lg overflow-hidden group">
+            <div className={`w-full aspect-square rounded-lg overflow-hidden group ${loaded ? 'animate-fadeInUp' : ''}`}>
               <img
                 src="./My_Portfolio/profile.png"
                 alt="Mohamed Raashid"

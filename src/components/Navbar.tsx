@@ -12,6 +12,7 @@ const Navbar: React.FC = () => {
     { path: '/skills', label: 'Skills' },
     { path: '/education', label: 'Education' },
     { path: '/projects', label: 'Projects' },
+    { path: '/gallery', label: 'Gallery' }, // Add Gallery to the navigation
     { path: '/contact', label: 'Contact' },
   ];
 

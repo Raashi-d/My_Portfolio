@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Education: React.FC = () => {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
+
   const education = [
     {
       institution: 'University of Moratuwa',
@@ -28,10 +34,11 @@ const Education: React.FC = () => {
         <h1 className="section-title">Education</h1>
         
         <div className="space-y-8">
-          {education.map((edu) => (
+          {education.map((edu, index) => (
             <div 
               key={edu.institution}
-              className="bg-gray-900 p-6 rounded-lg flex items-center gap-6 transform hover:scale-[1.02] transition-transform duration-300"
+              className={`bg-gray-900 p-6 rounded-lg flex items-center gap-6 transform hover:scale-[1.02] transition-transform duration-300 ${loaded ? 'fade-in-up' : ''}`}
+              style={{ animationDelay: `${index * 0.3}s` }}
             >
               <div className="w-24 h-24 flex-shrink-0">
                 <img

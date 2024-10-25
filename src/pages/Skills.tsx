@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Skills: React.FC = () => {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
+
   const skillCategories = [
     {
       title: 'Frontend Development',
@@ -63,8 +69,8 @@ const Skills: React.FC = () => {
                     </div>
                     <div className="h-2 bg-gray-700 rounded-full overflow-hidden">
                       <div 
-                        className="h-full bg-yellow-400 rounded-full transition-all duration-500"
-                        style={{ width: `${skill.rating}%` }}  // Set width based on rating
+                        className={`h-full bg-yellow-400 rounded-full transition-all duration-500 ${loaded ? 'fill-animation' : ''}`}
+                        style={{ '--fill-width': `${skill.rating}%` } as React.CSSProperties}  // Set width based on rating
                       />
                     </div>
                   </div>

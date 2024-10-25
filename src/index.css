@@ -23,6 +23,17 @@
   }
 }
 
+.fill-animation {
+  width: 0;
+  animation: fill 2s forwards;
+}
+
+@keyframes fill {
+  to {
+    width: var(--fill-width);
+  }
+}
+
 @layer components {
   .section-title {
     @apply text-3xl md:text-4xl font-bold mb-8 text-center;
@@ -54,4 +65,20 @@
 
 .animate-float {
   animation: float 3s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.5s forwards;
 }

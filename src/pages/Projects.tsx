@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Github } from 'lucide-react';
 
 const Projects: React.FC = () => {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
+
   const projects = [
     {
       title: 'TrackTempo - Smart Travel Mobile Application',
@@ -40,10 +46,11 @@ const Projects: React.FC = () => {
         <h1 className="section-title">Projects</h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project) => (
+          {projects.map((project, index) => (
             <div 
               key={project.title}
-              className="bg-gray-900 rounded-lg overflow-hidden transform hover:scale-[1.02] transition-transform duration-300 flex flex-col h-full"
+              className={`bg-gray-900 rounded-lg overflow-hidden transform hover:scale-[1.02] transition-transform duration-300 flex flex-col h-full ${loaded ? 'fade-in-up' : ''}`}
+              style={{ animationDelay: `${index * 0.3}s` }}
             >
               <div className="aspect-video">
                 <img
