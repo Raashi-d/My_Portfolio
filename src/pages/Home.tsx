@@ -57,7 +57,7 @@ const Home: React.FC = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
         >
           <FloatingImage
-            src="./My_Portfolio/about.png"
+            src="/My_Portfolio/about.png"
             alt="Mohamed Raashid"
             className="w-96 h-96 md:w-96 md:h-96"
           />
