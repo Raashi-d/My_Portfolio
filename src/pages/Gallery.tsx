@@ -43,10 +43,10 @@ const Gallery: React.FC = () => {
       </div>
 
       {selectedImage && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-          <div className="relative bg-white p-4 rounded-lg max-w-3xl w-full">
+        <div className="modal-overlay" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <button 
-              className="absolute top-2 right-2 text-black bg-gray-200 rounded-full p-2 hover:bg-gray-300"
+              className="modal-close"
               onClick={closeModal}
             >
               &times;
@@ -54,11 +54,89 @@ const Gallery: React.FC = () => {
             <img 
               src={selectedImage} 
               alt="Selected Certificate" 
-              className="w-full h-full object-contain"
+              className="modal-image"
             />
           </div>
         </div>
       )}
+
+      <style>{`
+        .gallery-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+          gap: 10px;
+        }
+
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: scale(0.95);
+          }
+          to {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+
+        .animate-fadeIn {
+          animation: fadeIn 1s forwards;
+        }
+
+        .section-title {
+          text-align: center;
+          font-size: 2rem;
+          font-weight: bold;
+          margin-bottom: 2rem;
+        }
+
+        .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 1rem;
+        }
+
+        .modal-overlay {
+          position: fixed;
+          inset: 0;
+          background: rgba(0, 0, 0, 0.75);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 50;
+        }
+
+        .modal-content {
+          position: relative;
+          background: white;
+          padding: 20px;
+          border-radius: 8px;
+          max-width: 90%;
+          max-height: 90%;
+          overflow: auto;
+        }
+
+        .modal-close {
+          position: absolute;
+          top: -15px;
+          right: -15px;
+          background: gray;
+          color: white;
+          border: none;
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+          font-size: 20px;
+          line-height: 30px;
+          text-align: center;
+        }
+
+        .modal-image {
+          max-width: 100%;
+          max-height: 80vh;
+          object-fit: contain;
+        }
+      `}</style>
     </div>
   );
 };
