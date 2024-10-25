@@ -38,7 +38,7 @@ const Home: React.FC = () => {
           </motion.p>
           
           <motion.button 
-            onClick={() => window.open('/Raashid_Resume.pdf', '_blank')}
+            onClick={() => window.open('/My_Portfolio/Raashid_Resume.pdf', '_blank')}
             className="group relative inline-flex items-center px-8 py-3 overflow-hidden text-lg font-medium text-black bg-yellow-400 rounded-lg hover:bg-yellow-500 transition-colors duration-300"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -57,7 +57,7 @@ const Home: React.FC = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
         >
           <FloatingImage
-            src="./about.png"
+            src="./My_Portfolio/about.png"
             alt="Mohamed Raashid"
             className="w-96 h-96 md:w-96 md:h-96"
           />

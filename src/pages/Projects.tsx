@@ -9,21 +9,21 @@ const Projects: React.FC = () => {
       technologies: ['Flutter', 'Node.js', 'React', 'MongoDB', 'APIs'],
       appLink: 'https://github.com/Raashi-d/TrackTempo-App',
       adminLink: 'https://github.com/Raashi-d/TrackTempo-Admin',
-      image: './trackTempo.jpg'
+      image: './My_Portfolio/trackTempo.jpg'
     },
     {
       title: "Hot N' Fast - E-commerce Restaurant Platform",
       description: 'An interactive dining platform with secure user authentication and customizable menus.',
       technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
       appLink: 'https://github.com/Raashi-d/Hot-N-Fast',
-      image: './hotnfast.jpeg'
+      image: './My_Portfolio/hotnfast.jpeg'
     },
     {
       title: 'Todo App',
       description: 'A task management app that enables users to efficiently create, complete, and delete tasks, helping them stay organized and productive.',
       technologies: ['Flutter', 'Dart'],
       appLink: 'https://github.com/Raashi-d/Todo-App',
-      image: './todo.jpg'
+      image: './My_Portfolio/todo.jpg'
     }
   ];
 

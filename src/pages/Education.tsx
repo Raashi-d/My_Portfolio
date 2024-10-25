@@ -6,19 +6,19 @@ const Education: React.FC = () => {
       institution: 'University of Moratuwa',
       period: 'Dec 2022 - Present',
       degree: 'National Diploma in Technology - Information Technology',
-      logo: './itum1.jpeg'
+      logo: './My_Portfolio/itum1.jpeg'
     },
     {
       institution: 'Zahira College Mawanella',
       period: 'Mar 2018 - Nov 2020',
       degree: 'Physical Science',
-      logo: './zahira1.png'
+      logo: './My_Portfolio/zahira1.png'
     },
     {
       institution: "St. Sylvester's College Kandy",
       period: 'Jan 2011 - Dec 2017',
       degree: 'Ordinary Level',
-      logo: './ssck.jpg'
+      logo: './My_Portfolio/ssck.jpg'
     }
   ];
 
