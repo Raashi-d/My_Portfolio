@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
 
   return (
     <motion.nav 
-      className="fixed top-0 left-0 right-0 bg-black/80 backdrop-blur-sm z-40"
+      className="fixed top-0 left-0 right-0 bg-black/80 backdrop-blur-sm z-40 h-16"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
         {isOpen && (
-          <div className="md:hidden flex flex-col space-y-2 mt-2">
+          <div className="md:hidden bg-black/80 backdrop-blur-sm flex flex-col space-y-2 mt-2 p-4 rounded-lg">
             {navItems.map((item) => (
               <NavLink
                 key={item.path}
