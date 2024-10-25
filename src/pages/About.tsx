@@ -65,7 +65,7 @@ const About: React.FC = () => {
           <div className="relative">
             <div className="w-full aspect-square rounded-lg overflow-hidden group">
               <img
-                src="./profile.png"
+                src="./My_Portfolio/profile.png"
                 alt="Mohamed Raashid"
                 className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-110"
               />
