@@ -70,7 +70,7 @@ const Skills: React.FC = () => {
                     <div className="h-2 bg-gray-700 rounded-full overflow-hidden">
                       <div 
                         className={`h-full bg-yellow-400 rounded-full transition-all duration-500 ${loaded ? 'fill-animation' : ''}`}
-                        style={{ '--fill-width': `${skill.rating}%` } as React.CSSProperties}  // Set width based on rating
+                        style={{ '--fill-width': `${skill.rating}%` } as React.CSSProperties}
                       />
                     </div>
                   </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Menu, X } from 'react-feather'; // Assuming you're using react-feather for icons
+import { Menu, X } from 'react-feather';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
     { path: '/skills', label: 'Skills' },
     { path: '/education', label: 'Education' },
     { path: '/projects', label: 'Projects' },
-    { path: '/gallery', label: 'Gallery' }, // Add Gallery to the navigation
+    { path: '/gallery', label: 'Gallery' },
     { path: '/contact', label: 'Contact' },
   ];
 
@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
                       : 'text-gray-300 hover:text-yellow-400'
                   }`
                 }
-                onClick={() => setIsOpen(false)} // Close menu on item click
+                onClick={() => setIsOpen(false)}
               >
                 <motion.span
                   whileHover={{ scale: 1.1 }}

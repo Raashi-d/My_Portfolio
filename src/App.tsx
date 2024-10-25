@@ -6,7 +6,7 @@ import About from './pages/About';
 import Skills from './pages/Skills';
 import Education from './pages/Education';
 import Projects from './pages/Projects';
-import Gallery from './pages/Gallery'; // Import the Gallery component
+import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import CustomCursor from './components/CustomCursor';
 import ScrollProgress from './components/ScrollProgress';
@@ -39,9 +39,9 @@ const App: React.FC = () => {
         <Route path="/skills" element={<Skills />} />
         <Route path="/education" element={<Education />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/gallery" element={<Gallery />} /> {/* Add Gallery route */}
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Navigate to="/" />} /> {/* Redirect to home page */}
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </div>
   );
