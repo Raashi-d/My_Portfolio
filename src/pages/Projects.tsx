@@ -24,6 +24,13 @@ const Projects: React.FC = () => {
       technologies: ['Flutter', 'Dart'],
       appLink: 'https://github.com/Raashi-d/Todo-App',
       image: './My_Portfolio/todo.jpg'
+    },
+    {
+      title: 'Weather Forecast Web Application',
+      description: 'A web application that utilizes the OpenWeather API to provide real-time weather data and 5-day forecasts for user-specified locations.',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'APIs'],
+      appLink: 'https://github.com/Raashi-d/Weather_Application',
+      image: './My_Portfolio/weatherapp.jpg'
     }
   ];
 
