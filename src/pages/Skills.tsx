@@ -11,11 +11,11 @@ const Skills: React.FC = () => {
     {
       title: 'Frontend Development',
       skills: [
-        { name: 'Flutter', rating: 40 },
-        { name: 'React', rating: 25 },
+        { name: 'Flutter', rating: 60 },
+        { name: 'React', rating: 40 },
         { name: 'HTML', rating: 60 },
         { name: 'CSS', rating: 60 },
-        { name: 'JavaScript', rating: 75 }
+        { name: 'JavaScript', rating: 50 }
       ]
     },
     {
@@ -23,30 +23,30 @@ const Skills: React.FC = () => {
       skills: [
         { name: 'Node.js', rating: 50 },
         { name: 'Express', rating: 40 },
-        { name: 'REST APIs', rating: 70 }
+        { name: 'REST APIs', rating: 50 }
       ]
     },
     {
       title: 'Database Systems',
       skills: [
-        { name: 'MongoDB', rating: 75 },
-        { name: 'MySQL', rating: 50 }
+        { name: 'MongoDB', rating: 50 },
+        { name: 'MySQL', rating: 30 }
       ]
     },
     {
       title: 'Tools and Platforms',
       skills: [
-        { name: 'VSCode', rating: 70 },
+        { name: 'VSCode', rating: 60 },
         { name: 'Figma', rating: 75 },
         { name: 'Photoshop', rating: 70 },
-        { name: 'Git', rating: 65 }
+        { name: 'Git', rating: 60 }
       ]
     },
     {
       title: 'Programming Languages',
       skills: [
-        { name: 'Python', rating: 60 },
-        { name: 'Java', rating: 65 }
+        { name: 'Python', rating: 50 },
+        { name: 'Java', rating: 50 }
       ]
     }
   ];
