@@ -144,9 +144,9 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.7 }}
         >
-          I'm a passionate developer specializing in Flutter, React, Node.js,
-          and cloud services. I love building modern, scalable apps and solving
-          real-world problems.
+          I'm a passionate developer specializing in Flutter, React, and
+          Node.js. I love building modern, scalable mobile and web apps and
+          solving real-world problems.
         </motion.p>
         <motion.div
           className="flex gap-4 mb-4"
