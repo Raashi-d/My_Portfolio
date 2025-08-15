@@ -10,7 +10,7 @@ const projects = [
     technologies: ["Flutter", "Node.js", "React", "MongoDB", "APIs"],
     appLink: "https://github.com/Raashi-d/TrackTempo-App",
     adminLink: "https://github.com/Raashi-d/TrackTempo-Admin",
-    image: "/src/assets/projects_img/trackTempo.jpg",
+  image: "/projects_img/trackTempo.jpg",
   },
   {
     title: "Bill Genius - Billing App",
@@ -18,7 +18,7 @@ const projects = [
       "A Flutter app for creating customizable invoices, allowing users to generate, save, and share professional invoices as PDFs. Designed for small businesses to streamline billing and record-keeping with ease.",
     technologies: ["Flutter"],
     appLink: "",
-    image: "/src/assets/projects_img/billgenius.jpg",
+  image: "/projects_img/billgenius.jpg",
   },
   {
     title: "Hot N' Fast - E-commerce Restaurant Platform",
@@ -26,7 +26,7 @@ const projects = [
       "An interactive dining platform with secure user authentication and customizable menus.",
     technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     appLink: "https://github.com/Raashi-d/Hot-N-Fast",
-    image: "/src/assets/projects_img/hotnfast.jpeg",
+  image: "/projects_img/hotnfast.jpeg",
   },
   {
     title: "Todo App",
@@ -34,7 +34,7 @@ const projects = [
       "A task management app that enables users to efficiently create, complete, and delete tasks, helping them stay organized and productive.",
     technologies: ["Flutter", "Dart"],
     appLink: "https://github.com/Raashi-d/Todo-App",
-    image: "/src/assets/projects_img/todo.jpg",
+  image: "/projects_img/todo.jpg",
   },
   {
     title: "Weather Forecast Web Application",
@@ -42,7 +42,7 @@ const projects = [
       "A web application that utilizes the OpenWeather API to provide real-time weather data and 5-day forecasts for user-specified locations.",
     technologies: ["HTML", "CSS", "JavaScript", "APIs"],
     appLink: "https://github.com/Raashi-d/Weather_Application",
-    image: "/src/assets/projects_img/weatherapp.jpg",
+  image: "/projects_img/weatherapp.jpg",
   },
 ];
 

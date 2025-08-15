@@ -4,21 +4,21 @@ import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 
 const eduCertificates = [
-  "/src/assets/edu_certificates/1.jpg",
-  "/src/assets/edu_certificates/2.jpg",
-  "/src/assets/edu_certificates/3.jpg",
-  "/src/assets/edu_certificates/4.jpg",
-  "/src/assets/edu_certificates/5.jpg",
-  "/src/assets/edu_certificates/6.jpg",
-  "/src/assets/edu_certificates/7.jpg",
+  "/edu_certificates/1.jpg",
+  "/edu_certificates/2.jpg",
+  "/edu_certificates/3.jpg",
+  "/edu_certificates/4.jpg",
+  "/edu_certificates/5.jpg",
+  "/edu_certificates/6.jpg",
+  "/edu_certificates/7.jpg",
 ];
 const extraCertificates = [
-  "/src/assets/certificate_img/certificate1.jpg",
-  "/src/assets/certificate_img/certificate2.jpg",
-  "/src/assets/certificate_img/certificate3.jpg",
-  "/src/assets/certificate_img/certificate4.jpg",
-  "/src/assets/certificate_img/certificate5.jpg",
-  "/src/assets/certificate_img/certificate6.jpg",
+  "/certificate_img/certificate1.jpg",
+  "/certificate_img/certificate2.jpg",
+  "/certificate_img/certificate3.jpg",
+  "/certificate_img/certificate4.jpg",
+  "/certificate_img/certificate5.jpg",
+  "/certificate_img/certificate6.jpg",
 ];
 
 const Gallery = () => {

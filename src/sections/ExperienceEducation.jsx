@@ -2,10 +2,10 @@ import React from "react";
 import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
 
 const logos = {
-  orbit: "/src/assets/education_places/Orbit.png",
-  itum: "/src/assets/education_places/itum.jpeg",
-  zahira: "/src/assets/education_places/zahira.png",
-  ssck: "/src/assets/education_places/ssck.jpg",
+  orbit: "/education_places/Orbit.png",
+  itum: "/education_places/itum.jpeg",
+  zahira: "/education_places/zahira.png",
+  ssck: "/education_places/ssck.jpg",
 };
 
 const experience = [
