@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -39,8 +40,34 @@ const skills = [
 ];
 
 const Skills = () => (
-  <section id="skills" className="py-16 bg-white dark:bg-gray-900">
-    <div className="max-w-5xl mx-auto px-4">
+  <section
+    id="skills"
+    className="relative py-16 bg-white dark:bg-gray-900 overflow-hidden"
+  >
+    {/* Animated background bubbles */}
+    <motion.div
+      className="absolute inset-0 w-full h-full z-0 pointer-events-none"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 0.18 }}
+      style={{ filter: "blur(32px)" }}
+    >
+      <motion.div
+        animate={{ y: [0, 30, 0] }}
+        transition={{ repeat: Infinity, duration: 8 }}
+        className="absolute left-10 top-10 w-40 h-40 rounded-full bg-blue-200 dark:bg-blue-900"
+      />
+      <motion.div
+        animate={{ y: [0, -30, 0] }}
+        transition={{ repeat: Infinity, duration: 10, delay: 2 }}
+        className="absolute right-10 bottom-10 w-32 h-32 rounded-full bg-sky-200 dark:bg-sky-900"
+      />
+      <motion.div
+        animate={{ x: [0, 20, 0] }}
+        transition={{ repeat: Infinity, duration: 12, delay: 1 }}
+        className="absolute left-1/2 top-1/2 w-24 h-24 rounded-full bg-blue-100 dark:bg-blue-800"
+      />
+    </motion.div>
+    <div className="relative max-w-5xl mx-auto px-4 z-10">
       <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-8">
         Technical Skills
       </h2>

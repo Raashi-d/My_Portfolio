@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
@@ -46,8 +47,34 @@ const projects = [
 ];
 
 const Projects = () => (
-  <section id="projects" className="py-16 bg-white dark:bg-gray-900">
-    <div className="max-w-5xl mx-auto px-4">
+  <section
+    id="projects"
+    className="relative py-16 bg-white dark:bg-gray-900 overflow-hidden"
+  >
+    {/* Animated background bubbles */}
+    <motion.div
+      className="absolute inset-0 w-full h-full z-0 pointer-events-none"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 0.13 }}
+      style={{ filter: "blur(32px)" }}
+    >
+      <motion.div
+        animate={{ y: [0, 40, 0] }}
+        transition={{ repeat: Infinity, duration: 10 }}
+        className="absolute left-16 top-16 w-44 h-44 rounded-full bg-purple-200 dark:bg-purple-900"
+      />
+      <motion.div
+        animate={{ y: [0, -40, 0] }}
+        transition={{ repeat: Infinity, duration: 12, delay: 2 }}
+        className="absolute right-16 bottom-16 w-36 h-36 rounded-full bg-indigo-200 dark:bg-indigo-900"
+      />
+      <motion.div
+        animate={{ x: [0, 30, 0] }}
+        transition={{ repeat: Infinity, duration: 14, delay: 1 }}
+        className="absolute left-1/2 top-1/3 w-28 h-28 rounded-full bg-fuchsia-100 dark:bg-fuchsia-800"
+      />
+    </motion.div>
+    <div className="relative max-w-5xl mx-auto px-4 z-10">
       <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-8">
         Projects
       </h2>

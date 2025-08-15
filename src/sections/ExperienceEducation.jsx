@@ -46,12 +46,37 @@ const education = [
   },
 ];
 
+import { motion } from "framer-motion";
+
 const ExperienceEducation = () => (
   <section
     id="experience"
-    className="py-16 bg-gray-50 dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800"
+    className="relative py-16 bg-gray-50 dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 overflow-hidden"
   >
-    <div className="max-w-5xl mx-auto px-4">
+    {/* Animated background bubbles */}
+    <motion.div
+      className="absolute inset-0 w-full h-full z-0 pointer-events-none"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 0.13 }}
+      style={{ filter: "blur(32px)" }}
+    >
+      <motion.div
+        animate={{ y: [0, 35, 0] }}
+        transition={{ repeat: Infinity, duration: 10 }}
+        className="absolute left-12 top-1/4 w-40 h-40 rounded-full bg-teal-200 dark:bg-teal-900"
+      />
+      <motion.div
+        animate={{ y: [0, -35, 0] }}
+        transition={{ repeat: Infinity, duration: 12, delay: 2 }}
+        className="absolute right-12 bottom-1/4 w-32 h-32 rounded-full bg-cyan-100 dark:bg-cyan-900"
+      />
+      <motion.div
+        animate={{ x: [0, 25, 0] }}
+        transition={{ repeat: Infinity, duration: 14, delay: 1 }}
+        className="absolute left-1/2 top-1/2 w-24 h-24 rounded-full bg-emerald-100 dark:bg-emerald-800"
+      />
+    </motion.div>
+    <div className="relative max-w-5xl mx-auto px-4 z-10">
       <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-8">
         Experience & Education
       </h2>
