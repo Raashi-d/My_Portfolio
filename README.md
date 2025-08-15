@@ -1,12 +1,75 @@
-# React + Vite
+# Mohamed Raashid - Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and animated developer portfolio built with React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+![Portfolio Screenshot](./public/preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Overview
 
-## Expanding the ESLint configuration
+Showcase your skills, projects, education, and experience with a beautiful, interactive portfolio. Designed for developers who want to impress recruiters and clients with a professional web presence.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- Fully responsive and mobile-friendly
+- Modern UI with smooth animations (Framer Motion)
+- Project gallery with image previews
+- Education & experience timeline with institution logos
+- Downloadable CV
+- Animated tech stack and background
+- Dark mode support
+
+## 🛠️ Tech Stack
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+
+## 📂 Folder Structure
+
+```
+my_portfolio/
+├── public/
+├── src/
+│   ├── assets/           # Images, certificates, logos
+│   ├── components/       # Navbar, shared UI
+│   ├── sections/         # Hero, Skills, Projects, Gallery, etc.
+│   └── main.jsx          # App entry
+├── package.json
+├── tailwind.config.js
+└── README.md
+```
+
+## 🖥️ Getting Started
+
+1. **Clone the repo:**
+   ```sh
+   git clone https://github.com/Raashi-d/my_portfolio.git
+   cd my_portfolio
+   ```
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+3. **Start the dev server:**
+   ```sh
+   npm run dev
+   ```
+4. **Open in browser:**
+   Visit [http://localhost:5173](http://localhost:5173)
+
+## 📝 Customization
+
+- Update your details in `src/sections/Hero.jsx`, `ExperienceEducation.jsx`, and `Projects.jsx`.
+- Add your certificates and project images to `src/assets/`.
+- Edit styles and animations in the respective components.
+
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+> Built and designed by Mohamed Raashid
