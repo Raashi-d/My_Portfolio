@@ -21,13 +21,13 @@ import {
 } from "react-icons/si";
 
 const skills = [
-  { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
+  { name: "Flutter", icon: <SiFlutter className="text-blue-500" /> },
   { name: "Dart", icon: <SiDart className="text-blue-400" /> },
   // { name: "Java", icon: <FaDatabase className="text-orange-500" /> },
+  { name: "React", icon: <FaReact className="text-blue-400" /> },
   { name: "HTML5", icon: <FaHtml5 className="text-orange-600" /> },
   { name: "CSS3", icon: <FaCss3Alt className="text-blue-500" /> },
-  { name: "React", icon: <FaReact className="text-blue-400" /> },
-  { name: "Flutter", icon: <SiFlutter className="text-blue-500" /> },
+  { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
   { name: "Node.js", icon: <FaNodeJs className="text-green-600" /> },
   {
     name: "Express.js",
