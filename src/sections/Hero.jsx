@@ -169,7 +169,7 @@ const Hero = () => {
           ))}
         </motion.div>
         <motion.a
-          href="/src/assets/Mohamed Raashid.pdf"
+          href="/Mohamed Raashid CV.pdf"
           download
           className="px-5 py-2 bg-blue-600 text-white rounded shadow hover:bg-blue-700 transition font-medium"
           whileHover={{ scale: 1.07, backgroundColor: "#2563eb" }}

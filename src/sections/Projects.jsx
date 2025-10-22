@@ -16,8 +16,9 @@ const projects = [
     title: "Bill Genius - Billing App",
     description:
       "A Flutter app for creating customizable invoices, allowing users to generate, save, and share professional invoices as PDFs. Designed for small businesses to streamline billing and record-keeping with ease.",
-    technologies: ["Flutter"],
-    appLink: "",
+    badge: "Now available on Google Play Store!",
+    technologies: ["Flutter", "Hive"],
+    appLink: "https://play.google.com/store/apps/details?id=com.orbit.billgenius&hl=en",
     image: "/projects_img/billgenius.jpg",
   },
   {
@@ -97,6 +98,13 @@ const Projects = () => (
                 <h3 className="text-xl font-bold text-blue-600 dark:text-blue-400 mb-2">
                   {project.title}
                 </h3>
+                {project.badge && (
+                  <div className="mb-3">
+                    <span className="inline-block px-3 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-200 rounded-full text-sm font-bold">
+                      {project.badge}
+                    </span>
+                  </div>
+                )}
                 <p className="text-gray-700 dark:text-gray-200 mb-2">
                   {project.description}
                 </p>

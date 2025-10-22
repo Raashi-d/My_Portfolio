@@ -17,12 +17,13 @@ import {
   SiDart,
   SiBitbucket,
   SiExpress,
+  SiGoogleplay,
 } from "react-icons/si";
 
 const skills = [
   { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
   { name: "Dart", icon: <SiDart className="text-blue-400" /> },
-  { name: "Java", icon: <FaDatabase className="text-orange-500" /> },
+  // { name: "Java", icon: <FaDatabase className="text-orange-500" /> },
   { name: "HTML5", icon: <FaHtml5 className="text-orange-600" /> },
   { name: "CSS3", icon: <FaCss3Alt className="text-blue-500" /> },
   { name: "React", icon: <FaReact className="text-blue-400" /> },
@@ -35,6 +36,10 @@ const skills = [
   { name: "MongoDB", icon: <SiMongodb className="text-green-700" /> },
   { name: "AWS S3", icon: <FaAws className="text-yellow-600" /> },
   { name: "Firebase", icon: <SiFirebase className="text-yellow-400" /> },
+  {
+    name: "Google Play Console",
+    icon: <SiGoogleplay className="text-green-500" />,
+  },
   { name: "Git/GitHub", icon: <FaGitAlt className="text-orange-500" /> },
   { name: "Bitbucket", icon: <SiBitbucket className="text-blue-700" /> },
 ];
